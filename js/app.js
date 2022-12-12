@@ -248,9 +248,9 @@ var growlWords = {
     'MozFest', 'maker'
   ],
   handle: [
-    'tibor', 'claudia', 'nancy',
-    'rebecca', 'mavis', 'tyler',
-    'daniel', 'kristina', 'sabrina', 'simon'
+    'kristina', 'sabrina', 'rebecca', 'nancy',
+    'tyler', 'mavis', 'daniel', 'simon', 'jen',
+    'tibor', 'claudia'
   ],
   event: [
     'burned down', 'isn\'t responding', 'needs approval',
