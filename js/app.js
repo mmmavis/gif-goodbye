@@ -127,7 +127,7 @@ function mouseMove(x,y) {
 
   var angleDeg = Math.atan2(screenHeight - y, screenWidth - x) * 180 / Math.PI;
 
-  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(251, 57, 160), rgb(138, 21, 247))");
+  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(251, 57, 160), rgb(118, 5, 223))");
 
   $(".content-wrapper").css("transform", transformString);
 
@@ -187,7 +187,9 @@ var growlCalendarPhrases = [
   '{{imperative_verb}} {{personal_noun}}',
   'take {{personal_noun}} to {{personal_place}}',
   'go to {{personal_place}}',
-  'meet with {{handle}}'
+  'meet with {{handle}}',
+  'OKR planning with {{handle}}',
+  '1:1 with {{handle}}'
 ];
 
 var growlWords = {
@@ -220,9 +222,9 @@ var growlWords = {
     'designed', 'torn down'
   ],
   adjective: [
-    'red', 'yellow', 'blue', 'dark', 'light', 'green', 'orange', 'purple', 'black', 'maroon',
-    'delicious', 'heavy', 'cascading', 'wide', 'timely', 'awesome', 'wired-up', 'fancy', 'simple',
-    'obvious', 'codified', 'performative', 'efficient'
+    'dark', 'light', 'green', 'orange', 'purple', 'hot pink',
+    'heavy', 'cascading', 'wide', 'timely', 'awesome', 'wired-up', 'fancy', 'simple',
+    'obvious', 'codified', 'performative', 'efficient', 'important'
   ],
   salutation: [
     'hello', 'hey', 'uhoh',
@@ -235,7 +237,7 @@ var growlWords = {
     'they', 'I', 'we'
   ],
   simple_response: [
-    'ok', 'nah', 'yep', 'nope', 'maybe', 'sure'
+    'ok', 'nah', 'yep', 'nope', 'maybe', 'sure', 'that\'s fair'
   ],
   question: [
     'how', 'why', 'where', 'when'
@@ -245,16 +247,18 @@ var growlWords = {
     'manager', 'model', 'quote',
     'doc', 'presentation', 'deck',
     'signin', 'SSO', 'Foundation site',
-    'MozFest', 'maker'
+    'MozFest', 'maker', 'OKR',
+    'CMS', 'CRM', 'fundraising',
+    'budget', 'all-hands'
   ],
   handle: [
     'kristina', 'sabrina', 'rebecca', 'nancy',
-    'tyler', 'mavis', 'daniel', 'simon', 'jen',
-    'tibor', 'claudia'
+    'tyler', 'mavis', 'daniel', 'simon'
   ],
   event: [
     'burned down', 'isn\'t responding', 'needs approval',
-    'wants a raise', 'needs help', 'has too many'
+    'needs help', 'has too many',
+    'is on PTO'
   ],
   urgent_verb: [
     'NEEDED', 'BROKEN', 'FAILING',
@@ -271,7 +275,8 @@ var growlWords = {
     'store', 'lake', 'river', 'vancouver'
   ],
   personal_noun: [
-    'kayak', 'tires', 'tools', 'coffee', 'lake', 'ice cream', 'donuts'
+    'kayak', 'car', 'tools', 'coffee', 'lake',
+    'desserts', 'donuts', 'beer', 'ski pass', 'Squid Game'
   ]
 }
 
