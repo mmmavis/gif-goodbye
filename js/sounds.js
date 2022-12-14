@@ -13,7 +13,7 @@ var sounds = {
     volume: .5
   },
   "join" : {
-    url : path + "sounds/join.wav",
+    url : path + "sounds/join.map3",
     volume: .4
   },
   "leave" : {
