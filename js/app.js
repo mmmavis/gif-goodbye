@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
   $(".ui-bar .close").on("mouseover",function(){
-    moveBar();
+    // moveBar();
   });
 
   setTimeout(function(){
@@ -127,7 +127,7 @@ function mouseMove(x,y) {
 
   var angleDeg = Math.atan2(screenHeight - y, screenWidth - x) * 180 / Math.PI;
 
-  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(251, 57, 160), rgb(118, 5, 223))");
+  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(255, 79, 173), rgb(55, 5, 101))");
 
   $(".content-wrapper").css("transform", transformString);
 
