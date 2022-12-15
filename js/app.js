@@ -127,7 +127,7 @@ function mouseMove(x,y) {
 
   var angleDeg = Math.atan2(screenHeight - y, screenWidth - x) * 180 / Math.PI;
 
-  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(255, 79, 173), rgb(55, 5, 101))");
+  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(247, 21, 142), rgb(104, 5, 197))");
 
   $(".content-wrapper").css("transform", transformString);
 
