@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
   $(".ui-bar .close").on("mouseover",function(){
-    moveBar();
+    // moveBar();
   });
 
   setTimeout(function(){

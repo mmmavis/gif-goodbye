@@ -1,3 +1,5 @@
+@ui-bar-height: 27px;
+
 html {
   font-family: "Helvetica Neue", "Arial", sans-serif;
   height: 100%;
@@ -15,7 +17,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(24deg, rgb(251, 57, 160), rgb(138, 21, 247));
+  background: linear-gradient(24deg, rgb(251, 57, 160), rgb(118, 5, 223));
 }
 
 .page-wrapper {
@@ -82,7 +84,7 @@ h2 {
   .people {
     background: black;
     width: 600px;
-    height: 462px;
+    height: calc(462px + @ui-bar-height);
 
     .person {
       width: 200px;
@@ -149,13 +151,38 @@ h2 {
 
 }
 
+.top-controls {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  width: 590px;
+  height: 25px;
+
+  .left {
+    float: left;
+    background-image: ~"url(images/zoom-top-left.png)";
+    background-size: cover;
+    background-position: center;
+    width: calc(318px / 3);
+    height: calc(52px / 3);
+  }
+  .right {
+    float: right;
+    background-image: ~"url(images/zoom-top-right.png)";
+    background-size: cover;
+    background-position: center;
+    width: calc(108px / 3);
+    height: calc(50px / 3);
+  }
+}
+
 .ui-bar {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 35px;
-  width: 205px;
-  background-image: ~"url(images/ui-bar.png)";
+  top: calc(29px+@ui-bar-height);
+  left: -198px;
+  height: @ui-bar-height;
+  width: 600px;
+  background-image: ~"url(images/zoom-ui-bar.png)";
   background-size: cover;
   background-position: center;
   transform: translateX(198px) translateY(432px) translateZ(25px);
