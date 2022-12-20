@@ -20,6 +20,19 @@ $(document).ready(function(){
     loop();
   }, 1000);
 
+  // confetti
+  const canvas = document.getElementById('confetti-canvas')
+  const jsConfetti = new JSConfetti({ canvas });
+
+  $("body").click(function() {
+    jsConfetti.addConfetti({
+      emojis: [ 'OKR' ],
+      emojiSize: 20,
+      confettiNumber: 50,
+      confettiRadius: 20,
+    });
+  });
+
 });
 
 
@@ -30,7 +43,7 @@ var maxPeople = 9;
 
 var maxDegrees = 40;
 var actionTicks = 0;
-var numberGifs = 9;
+var numberGifs = 11;
 var ticks = 0;
 var minDelay = 10;
 var maxDelay = 150;
@@ -127,7 +140,7 @@ function mouseMove(x,y) {
 
   var angleDeg = Math.atan2(screenHeight - y, screenWidth - x) * 180 / Math.PI;
 
-  $("body").css("background","linear-gradient("+angleDeg+"deg, rgb(247, 21, 142), rgb(104, 5, 197))");
+  $("body").css("background","linear-gradient("+angleDeg+"deg, rgba(237,27,118,1) 0%, rgba(250,190,216,1) 30%, rgba(255,255,255,1) 50%, rgba(174,217,226,1) 70%, rgba(48,159,181,1) 100%)");
 
   $(".content-wrapper").css("transform", transformString);
 
@@ -249,13 +262,14 @@ var growlWords = {
     'signin', 'SSO', 'Foundation site',
     'MozFest', 'maker', 'OKR',
     'CMS', 'CRM', 'fundraising',
-    'budget', 'all-hands'
+    'budget', 'all-hands',
+    'Helvetica Neue', 'new petition signatures', 'metrics'
   ],
   handle: [
     'kristina', 'sabrina', 'rebecca', 'nancy',
     'tyler', 'mavis', 'daniel', 'simon', 'jen',
-    'tibor', 'claudia', 'ben'
-
+    'tibor', 'claudia', 'ben',
+    'kevin'
   ],
   event: [
     'burned down', 'isn\'t responding', 'needs approval',
@@ -274,7 +288,7 @@ var growlWords = {
     'get', 'eat', 'make', 'pick up', 'buy'
   ],
   personal_place: [
-    'store', 'lake', 'river', 'vancouver'
+    'store', 'lake', 'river', 'vancouver', 'Diamond Head'
   ],
   personal_noun: [
     'kayak', 'car', 'tools', 'coffee', 'lake',
