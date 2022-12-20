@@ -269,7 +269,7 @@ var growlWords = {
     'kristina', 'sabrina', 'rebecca', 'nancy',
     'tyler', 'mavis', 'daniel', 'simon', 'jen',
     'tibor', 'claudia', 'ben',
-    'kevin'
+    'kevin', 'christina', 'brandon'
   ],
   event: [
     'burned down', 'isn\'t responding', 'needs approval',
