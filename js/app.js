@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   $("body").click(function() {
     jsConfetti.addConfetti({
-      emojis: [ 'OKR' ],
+      emojis: [ '🦊' ],
       emojiSize: 20,
       confettiNumber: 50,
       confettiRadius: 20,
@@ -43,7 +43,7 @@ var maxPeople = 9;
 
 var maxDegrees = 40;
 var actionTicks = 0;
-var numberGifs = 17;
+var numberGifs = 23;
 var ticks = 0;
 var minDelay = 10;
 var maxDelay = 150;
